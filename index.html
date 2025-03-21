@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignoDay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="imgs/horoscopo.png" class="iconHeader" alt=""> <p class="titleHeader">SignoDay</p>
+
+    </header>
+
+    <main>
+
+        <div class="blocoData" id="blocoData">
+            <div class="headerBloco">
+                <p class="titleBloco1">Descobrir meu signo:</p>
+
+                
+            </div>
+
+            <div class="containerInputs">
+                <label class="labelInfo">Digite seu dia de nascimento:</label>
+                <input type="text" class="inputData" id="inputDia" placeholder="Dia de nascimento">
+                <label class="labelInfo">Digite seu mês de nascimento:</label>
+                <input type="text" class="inputData" id="inputMes" placeholder="Mês de nascimento">
+
+                
+            </div>
+            <button class="buttonData" onclick="verificar()">Ver signo</button>
+            <p class="error" id="error">Digite uma data válida.</p>
+
+        </div>
+
+        <div class="boxSigno" id="boxSigno">
+            <div class="headerBox">
+                <img class="iconHeader2" id="imagemSigno" src="" alt=""><p class="titleSigno" id="mostrarSigno"></p>
+            </div>
+
+            <p id="infosSigno" class="infosSigno"></p>
+
+        </div>
+        
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
